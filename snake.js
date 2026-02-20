@@ -64,4 +64,10 @@ function loadSnakeGame() {
   const gameInterval = setInterval(drawGame, 150);
 
   container.appendChild(canvas);
+
+}
+
+
+function goBack() {
+    window.history.back();
 }
