@@ -50,4 +50,10 @@ function loadTicTacToe() {
   });
 
   container.appendChild(grid);
+
+}
+
+
+function goBack() {
+    window.history.back();
 }
