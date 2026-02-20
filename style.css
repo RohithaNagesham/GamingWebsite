@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #1f0036, #003049);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.custom-nav {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.brand-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff6ec7, #7afcff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dots {
+  color: #ff6ec7;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Big Title */
+.main-title {
+  font-size: 4rem;
+  background: linear-gradient(90deg, #ff6ec7, #7afcff, #b388ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff6ec7; }
+  to { text-shadow: 0 0 25px #7afcff; }
+}
+
+.tagline {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  color: #cfd8ff;
+}
+
+/* Animated Gaming Icon */
+.gaming-image {
+  font-size: 120px;
+  margin-top: 40px;
+  animation: float 3s ease-in-out infinite;
+  text-shadow: 0 0 20px #7afcff;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Button */
+.start-btn {
+  background: linear-gradient(90deg, #ff6ec7, #7afcff);
+  border: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.start-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff6ec7;
+}
+
+/* Search Box */
+.search-box {
+  border-radius: 20px;
+  border: 1px solid #7afcff;
+  background: transparent;
+  color: white;
+}
+
+.search-box::placeholder {
+  color: #cfd8ff;
+}
+
+.game-area {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tic Tac Toe Grid */
+.ttt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+}
+
+.ttt-cell {
+  width: 100px;
+  height: 100px;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.ttt-cell:hover {
+  background: rgba(45,226,230,0.3);
+}
+
+.nav-link:hover {
+  color: #2de2e6 !important;
+  text-shadow: 0 0 8px #2de2e6;
+}
+
+body {
+  animation: gradientMove 10s infinite alternate;
+}
+
+@keyframes gradientMove {
+  0% { background: linear-gradient(180deg, #1a002b, #001f2f); }
+  100% { background: linear-gradient(180deg, #000814, #2b0033); }
+}
+
+.neon-input {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid #2de2e6;
+  color: white;
+}
+
+.neon-input:focus {
+  box-shadow: 0 0 10px #2de2e6;
+  border-color: #2de2e6;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.contact-form {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+
+.nav-link:hover {
+  color: #2de2e6 !important;
+  text-shadow: 0 0 8px #2de2e6;
+}
+
+body {
+  animation: gradientMove 10s infinite alternate;
+}
+
+@keyframes gradientMove {
+  0% { background: linear-gradient(180deg, #1a002b, #001f2f); }
+  100% { background: linear-gradient(180deg, #000814, #2b0033); }
+}
