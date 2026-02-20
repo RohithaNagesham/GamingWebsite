@@ -3,6 +3,11 @@ function loadMemoryGame() {
   const container = document.getElementById("gameContainer");
   container.innerHTML = "";
 
+
+  
+
+
+
   const symbols = ["🍕","🍕","🎮","🎮","🚀","🚀","🔥","🔥"];
   symbols.sort(() => 0.5 - Math.random());
 
@@ -55,4 +60,10 @@ function loadMemoryGame() {
   });
 
   container.appendChild(grid);
+}
+
+
+
+function goBack() {
+    window.history.back();
 }
