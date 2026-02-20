@@ -57,4 +57,9 @@ function loadWhackGame() {
   container.appendChild(scoreText);
   container.appendChild(timerText);
   container.appendChild(grid);
+
+}
+
+function goBack() {
+    window.history.back();
 }
