@@ -1,6 +1,8 @@
 // Future search filtering logic placeholder
 console.log("Gamzy Loaded Successfully 🔥");
 
+
+
 const params = new URLSearchParams(window.location.search);
 const game = params.get("game");
 
@@ -25,39 +27,6 @@ if (game === "tictactoe") {
   };
 }
 
-// WHACK A BOX
-if (game === "whack") {
-  gameTitle.innerText = "Whack a Box";
-  guideText.innerHTML = `
-    1. Click the glowing box.<br>
-    2. You have 20 seconds.<br>
-    3. Score increases for every hit.<br>
-    4. Try to beat your high score!
-  `;
-  guideModal.show();
-
-  startBtn.onclick = () => {
-    guideModal.hide();
-    loadWhackGame();
-  };
-}
-
-// SNAKE GAME
-if (game === "snake") {
-  gameTitle.innerText = "Snake Game";
-  guideText.innerHTML = `
-    1. Use arrow keys to move.<br>
-    2. Eat food to grow.<br>
-    3. Don't hit walls or yourself.<br>
-    4. Highest score wins!
-  `;
-  guideModal.show();
-
-  startBtn.onclick = () => {
-    guideModal.hide();
-    loadSnakeGame();
-  };
-}
 
 
 // MEMORY GAME
@@ -77,6 +46,8 @@ if (game === "memory") {
   };
 }
 
+
+
 // SLIDING PUZZLE
 if (game === "sliding") {
   gameTitle.innerText = "Sliding Puzzle";
@@ -93,6 +64,46 @@ if (game === "sliding") {
   };
 }
 
+
+
+// WHACK A BOX
+if (game === "whack") {
+  gameTitle.innerText = "Whack a Box";
+  guideText.innerHTML = `
+    1. Click the glowing box.<br>
+    2. You have 20 seconds.<br>
+    3. Score increases for every hit.<br>
+    4. Try to beat your high score!
+  `;
+  guideModal.show();
+
+  startBtn.onclick = () => {
+    guideModal.hide();
+    loadWhackGame();
+  };
+}
+
+
+
+// SNAKE GAME
+if (game === "snake") {
+  gameTitle.innerText = "Snake Game";
+  guideText.innerHTML = `
+    1. Use arrow keys to move.<br>
+    2. Eat food to grow.<br>
+    3. Don't hit walls or yourself.<br>
+    4. Highest score wins!
+  `;
+  guideModal.show();
+
+  startBtn.onclick = () => {
+    guideModal.hide();
+    loadSnakeGame();
+  };
+}
+
+
+
 const searchBox = document.querySelector(".search-box");
 
 if (searchBox) {
@@ -107,4 +118,15 @@ if (searchBox) {
   });
 }
 
+
+
+ function goBack() {
+    window.history.back();
+}
+
+
+
+
+
 console.log("Gamzy Fully Loaded 🔥");
+
