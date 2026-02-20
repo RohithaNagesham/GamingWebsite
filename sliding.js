@@ -49,6 +49,12 @@ function loadSlidingPuzzle() {
     }
   }
 
+
+  function goBack() {
+    window.history.back();
+}
+
   render();
   container.appendChild(grid);
+
 }
