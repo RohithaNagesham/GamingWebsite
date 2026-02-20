@@ -118,15 +118,10 @@ if (searchBox) {
   });
 }
 
-
-
  function goBack() {
     window.history.back();
 }
 
-
-
-
-
 console.log("Gamzy Fully Loaded 🔥");
+
 
