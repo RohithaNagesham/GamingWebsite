@@ -10,7 +10,7 @@ body {
 .custom-nav {
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
-}
+} 
 
 .brand-text {
   font-size: 1.8rem;
@@ -67,6 +67,14 @@ body {
   100% { transform: translateY(0px); }
 }
 
+.navbar {
+   background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  
+}
+
+
+
 /* Button */
 .start-btn {
   background: linear-gradient(90deg, #ff6ec7, #7afcff);
@@ -82,12 +90,17 @@ body {
   box-shadow: 0 0 20px #ff6ec7;
 }
 
-.back-btn {
-  position: fixed;
-  margin-left: 700px;
-  bottom: 20px;
-  left: 20px;
+.backbtnbtn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  justify-content: center;
+
+
 }
+
+
 
 
 /* Hover Effect */
